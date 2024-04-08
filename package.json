@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "tt",
+    "test": "yarn workspaces run test",
+    "commit": "npx git-cz"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/vue-composition-test-utils",
+      "packages/test-vue2",
+      "packages/test-vue3"
+    ],
+    "nohoist": [
+      "**/vue",
+      "**/vue-demi",
+      "**/@vue/test-utils",
+      "**/vue-template-compiler"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyXu/dogmoney.git"
+  },
+  "author": "cc",
+  "license": "MIT",
+  "devDependencies": {
+    "commitlint": "^8.3.5",
+    "husky": "^4.2.1"
+  },
+  "peerDependencies": {
+  },
+  "dependencies": {
+  }
+}
